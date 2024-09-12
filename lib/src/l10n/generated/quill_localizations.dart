@@ -138,6 +138,7 @@ abstract class FlutterQuillLocalizations {
     Locale('cs'),
     Locale('da'),
     Locale('de'),
+    Locale('el'),
     Locale('en'),
     Locale('en', 'US'),
     Locale('es'),
@@ -173,7 +174,8 @@ abstract class FlutterQuillLocalizations {
     Locale('vi'),
     Locale('zh'),
     Locale('zh', 'CN'),
-    Locale('zh', 'HK')
+    Locale('zh', 'HK'),
+    Locale('zh', 'TW')
   ];
 
   /// No description provided for @pasteLink.
@@ -778,8 +780,8 @@ class _FlutterQuillLocalizationsDelegate
         'cs',
         'da',
         'de',
-        'en',
         'el',
+        'en',
         'es',
         'fa',
         'fr',
@@ -857,6 +859,8 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
             return FlutterQuillLocalizationsZhCn();
           case 'HK':
             return FlutterQuillLocalizationsZhHk();
+          case 'TW':
+            return FlutterQuillLocalizationsZhTw();
         }
         break;
       }
@@ -868,8 +872,6 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
       return FlutterQuillLocalizationsAr();
     case 'bg':
       return FlutterQuillLocalizationsBg();
-    case 'el':
-      return FlutterQuillLocalizationsEl();
     case 'bn':
       return FlutterQuillLocalizationsBn();
     case 'ca':
@@ -880,6 +882,8 @@ FlutterQuillLocalizations lookupFlutterQuillLocalizations(Locale locale) {
       return FlutterQuillLocalizationsDa();
     case 'de':
       return FlutterQuillLocalizationsDe();
+    case 'el':
+      return FlutterQuillLocalizationsEl();
     case 'en':
       return FlutterQuillLocalizationsEn();
     case 'es':
